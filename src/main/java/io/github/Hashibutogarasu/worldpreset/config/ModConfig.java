@@ -1,4 +1,4 @@
-package io.git.Hashibutogarasu.worldpreset.config;
+package io.github.Hashibutogarasu.worldpreset.config;
 
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;

@@ -1,4 +1,4 @@
-package io.git.Hashibutogarasu.worldpreset.gui.widgets;
+package io.github.Hashibutogarasu.worldpreset.gui.widgets;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -7,7 +7,7 @@ import net.minecraft.client.gui.widget.TextIconButtonWidget;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import static io.git.Hashibutogarasu.worldpreset.client.WorldPresetClient.MOD_ID;
+import static io.github.Hashibutogarasu.worldpreset.client.WorldPresetClient.MOD_ID;
 
 @Environment(EnvType.CLIENT)
 public class ModConfigButtons {        

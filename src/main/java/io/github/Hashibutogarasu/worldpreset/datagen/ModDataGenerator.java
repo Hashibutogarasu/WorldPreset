@@ -1,8 +1,8 @@
-package io.git.Hashibutogarasu.worldpreset.datagen;
+package io.github.Hashibutogarasu.worldpreset.datagen;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import io.git.Hashibutogarasu.worldpreset.gamerule.ConfigToGamerule;
+import io.github.Hashibutogarasu.worldpreset.gamerule.ConfigToGamerule;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.nbt.NbtElement;
@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static io.git.Hashibutogarasu.worldpreset.client.WorldPresetClient.MOD_ID;
+import static io.github.Hashibutogarasu.worldpreset.client.WorldPresetClient.MOD_ID;
 import static net.gcardone.junidecode.Junidecode.unidecode;
 
 public class ModDataGenerator implements DataGeneratorEntrypoint {

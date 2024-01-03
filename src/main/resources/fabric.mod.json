@@ -15,13 +15,13 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "io.git.Hashibutogarasu.worldpreset.client.WorldPresetClient"
+      "io.github.Hashibutogarasu.worldpreset.client.WorldPresetClient"
     ],
     "fabric-datagen": [
-      "io.git.Hashibutogarasu.worldpreset.datagen.ModDataGenerator"
+      "io.github.Hashibutogarasu.worldpreset.datagen.ModDataGenerator"
     ],
     "modmenu": [
-      "io.git.Hashibutogarasu.worldpreset.WorldPresetModMenuIntegration"
+      "io.github.Hashibutogarasu.worldpreset.WorldPresetModMenuIntegration"
     ]
   },
   "mixins": [
