@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "worldpreset",
+  "version": "${version}",
+  "name": "World Preset",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Karasu/worldpreset"
+  },
+  "license": "MIT",
+  "icon": "assets/worldpreset/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "git.hashibutogarasu.worldpreset.client.WorldPresetClient"
+    ],
+    "main": [
+      "git.hashibutogarasu.worldpreset.WorldPreset"
+    ],
+    "fabric-datagen": [
+      "git.hashibutogarasu.worldpreset.datagen.ModDataGenerator"
+    ],
+    "modmenu": [
+      "git.hashibutogarasu.worldpreset.WorldPresetModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "worldpreset.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
