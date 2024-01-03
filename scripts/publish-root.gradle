@@ -5,7 +5,6 @@ ext["signing.keyId"] = ''
 ext["signing.password"] = ''
 ext["signing.key"] = ''
 
-// CIとローカルビルド両方で動作するように秘匿情報の参照先を分けます
 File secretPropsFile = project.rootProject.file('local.properties')
 if (secretPropsFile.exists()) {
     Properties p = new Properties()
@@ -26,8 +25,6 @@ nexusPublishing {
             stagingProfileId = sonatypeStagingProfileId
             username = ossrhUsername
             password = ossrhPassword
-            // 2021.02以降Maven Central Repositoryにリポジトリを新規作成する場合は下記の指定が必要です
-            // https://central.sonatype.org/publish/publish-gradle/#metadata-definition-and-upload
             nexusUrl.set(uri("https://s01.oss.sonatype.org/service/local/"))
             snapshotRepositoryUrl.set(uri("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
         }

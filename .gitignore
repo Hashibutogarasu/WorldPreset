@@ -3,3 +3,5 @@ remappedSrc/
 build/
 .idea/
 .gradle/
+
+/local.properties

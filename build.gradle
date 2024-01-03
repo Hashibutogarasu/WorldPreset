@@ -1,6 +1,9 @@
 plugins {
     id 'fabric-loom' version '1.2-SNAPSHOT'
     id 'maven-publish'
+    id("io.github.gradle-nexus.publish-plugin") version "1.0.0"
+    id 'signing'
+    id("org.jetbrains.dokka") version "1.9.10"
 }
 
 version = project.mod_version
@@ -23,6 +26,7 @@ loom {
 repositories {
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://maven.terraformersmc.com/" }
+    maven { url "https://plugins.gradle.org/m2/" }
 }
 
 dependencies {
@@ -45,6 +49,9 @@ dependencies {
     modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
         exclude(group: "net.fabricmc.fabric-api")
     }
+
+    implementation 'io.github.gradle-nexus:publish-plugin:1.1.0'
+    implementation "org.jetbrains.dokka:dokka-gradle-plugin:1.5.0"
 }
 
 processResources {
@@ -106,3 +113,12 @@ publishing {
         // retrieving dependencies.
     }
 }
+
+ext {
+    PUBLISH_GROUP_ID = 'io.github.hashibutogarasu'
+    PUBLISH_VERSION = '0.0.1'
+    PUBLISH_ARTIFACT_ID = 'worldpreset'
+}
+
+apply from: "${rootDir}/scripts/publish-root.gradle"
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
