@@ -1,7 +1,6 @@
-package git.hashibutogarasu.worldpreset.gui.widgets;
+package io.git.Hashibutogarasu.gui.widgets;
 
-import static git.hashibutogarasu.worldpreset.WorldPreset.MOD_ID;
-
+import io.git.Hashibutogarasu.WorldPreset;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -16,6 +15,6 @@ public class ModConfigButtons {
                 Text text = hideText ? Text.translatable("options.worldpreset")
                                 : Text.translatable("worldpreset.onboarding.accessibility.button");
                 return TextIconButtonWidget.builder(text, onPress, hideText).width(width)
-                                .texture(new Identifier(MOD_ID, "icon/worldpreset"), 15, 15).build();
+                                .texture(new Identifier(WorldPreset.MOD_ID, "icon/worldpreset"), 15, 15).build();
         }
 }

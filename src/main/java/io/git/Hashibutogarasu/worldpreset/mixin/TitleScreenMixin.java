@@ -1,12 +1,12 @@
-package git.hashibutogarasu.worldpreset.mixin;
+package io.git.Hashibutogarasu.mixin;
 
+import io.git.Hashibutogarasu.config.ModConfig;
+import io.git.Hashibutogarasu.gui.widgets.ModConfigButtons;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import git.hashibutogarasu.worldpreset.ModConfig;
-import git.hashibutogarasu.worldpreset.gui.widgets.ModConfigButtons;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;

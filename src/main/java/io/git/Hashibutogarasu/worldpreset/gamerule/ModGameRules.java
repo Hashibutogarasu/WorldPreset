@@ -1,4 +1,4 @@
-package git.hashibutogarasu.worldpreset.gamerule;
+package io.git.Hashibutogarasu.gamerule;
 
 import net.minecraft.world.GameRules;
 import org.slf4j.Logger;

@@ -1,13 +1,15 @@
-package git.hashibutogarasu.worldpreset.mixin;
+package io.git.Hashibutogarasu.mixin;
 
-import git.hashibutogarasu.worldpreset.client.WorldPresetClient;
-import git.hashibutogarasu.worldpreset.gamerule.GameruleMap;
+import io.git.Hashibutogarasu.client.WorldPresetClient;
+import io.git.Hashibutogarasu.config.ModConfig;
+import io.git.Hashibutogarasu.gamerule.GameruleMap;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.world.CreateWorldScreen;
 import net.minecraft.client.gui.screen.world.WorldCreator;
 import net.minecraft.text.Text;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
@@ -24,6 +26,8 @@ public abstract class CreateWorldScreenMixin extends Screen {
     @Shadow
     public abstract WorldCreator getWorldCreator();
 
+    @Shadow @Final
+    WorldCreator worldCreator;
     @Unique
     private final Logger LOGGER = LoggerFactory.getLogger(WorldPresetClient.class);
 
@@ -34,8 +38,7 @@ public abstract class CreateWorldScreenMixin extends Screen {
 
         gameruleMap.booleanRuleMap.forEach((key, aBoolean) -> world.getGameRules().get(key).set(aBoolean, null));
         gameruleMap.intRuleMap.forEach((key, integer) -> world.getGameRules().get(key).set(integer, null));
-
-        world.setGenerateStructures(false);
+        world.setGenerateStructures(ModConfig.getConfig().generateStructures);
         world.update();
     }
 }

@@ -1,6 +1,6 @@
-package git.hashibutogarasu.worldpreset.client;
+package io.git.Hashibutogarasu.client;
 
-import git.hashibutogarasu.worldpreset.ModConfig;
+import io.git.Hashibutogarasu.config.ModConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigHolder;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;

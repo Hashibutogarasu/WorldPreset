@@ -1,6 +1,6 @@
-package git.hashibutogarasu.worldpreset.gamerule;
+package io.git.Hashibutogarasu.gamerule;
 
-import git.hashibutogarasu.worldpreset.ModConfig;
+import io.git.Hashibutogarasu.config.ModConfig;
 import net.minecraft.world.GameRules;
 
 import java.util.HashMap;

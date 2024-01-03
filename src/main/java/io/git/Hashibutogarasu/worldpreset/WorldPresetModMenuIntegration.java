@@ -1,7 +1,9 @@
-package git.hashibutogarasu.worldpreset;
+package io.git.Hashibutogarasu;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
+
+import io.git.Hashibutogarasu.config.ModConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 
 public class WorldPresetModMenuIntegration implements ModMenuApi {
