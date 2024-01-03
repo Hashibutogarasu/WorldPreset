@@ -4,25 +4,24 @@
   "version": "${version}",
   "name": "World Preset",
   "description": "",
-  "authors": [],
+  "authors": [
+    "Hashibutogarasu"
+  ],
   "contact": {
-    "repo": "https://github.com/Karasu/worldpreset"
+    "repo": "https://github.com/Hashibutogarasu/WorldPreset"
   },
   "license": "MIT",
   "icon": "assets/worldpreset/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "git.hashibutogarasu.worldpreset.client.WorldPresetClient"
-    ],
-    "main": [
-      "git.hashibutogarasu.worldpreset.WorldPreset"
+      "io.git.Hashibutogarasu.worldpreset.client.WorldPresetClient"
     ],
     "fabric-datagen": [
-      "git.hashibutogarasu.worldpreset.datagen.ModDataGenerator"
+      "io.git.Hashibutogarasu.worldpreset.datagen.ModDataGenerator"
     ],
     "modmenu": [
-      "git.hashibutogarasu.worldpreset.WorldPresetModMenuIntegration"
+      "io.git.Hashibutogarasu.worldpreset.WorldPresetModMenuIntegration"
     ]
   },
   "mixins": [

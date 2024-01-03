@@ -1,9 +1,8 @@
-package io.git.Hashibutogarasu.datagen;
+package io.git.Hashibutogarasu.worldpreset.datagen;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import io.git.Hashibutogarasu.gamerule.ConfigToGamerule;
-import io.git.Hashibutogarasu.WorldPreset;
+import io.git.Hashibutogarasu.worldpreset.gamerule.ConfigToGamerule;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.nbt.NbtElement;
@@ -19,7 +18,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static net.gcardone.junidecode.Junidecode.*;
+import static io.git.Hashibutogarasu.worldpreset.client.WorldPresetClient.MOD_ID;
+import static net.gcardone.junidecode.Junidecode.unidecode;
 
 public class ModDataGenerator implements DataGeneratorEntrypoint {
     private static final Logger LOGGER = LoggerFactory.getLogger(ModDataGenerator.class);
@@ -50,8 +50,8 @@ public class ModDataGenerator implements DataGeneratorEntrypoint {
             if (field.getType() == GameRules.Key.class) {
                 try {
                     GameRules.Key<?> key = ((GameRules.Key<?>) field.get(field));
-                    translations.put("text.autoconfig." + WorldPreset.MOD_ID + ".option." + key, key.getName());
-                    translations.put("text.autoconfig." + WorldPreset.MOD_ID + ".option." + key + ".@Tooltip",
+                    translations.put("text.autoconfig." + MOD_ID + ".option." + key, key.getName());
+                    translations.put("text.autoconfig." + MOD_ID + ".option." + key + ".@Tooltip",
                             Text.translatable(key.getTranslationKey()).getString());
                 } catch (IllegalAccessException ignored) {
 

@@ -1,8 +1,8 @@
-package io.git.Hashibutogarasu.mixin;
+package io.git.Hashibutogarasu.worldpreset.mixin;
 
-import io.git.Hashibutogarasu.client.WorldPresetClient;
-import io.git.Hashibutogarasu.config.ModConfig;
-import io.git.Hashibutogarasu.gamerule.GameruleMap;
+import io.git.Hashibutogarasu.worldpreset.client.WorldPresetClient;
+import io.git.Hashibutogarasu.worldpreset.config.ModConfig;
+import io.git.Hashibutogarasu.worldpreset.gamerule.GameruleMap;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.world.CreateWorldScreen;
 import net.minecraft.client.gui.screen.world.WorldCreator;

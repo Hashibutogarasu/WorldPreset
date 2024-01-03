@@ -1,7 +1,7 @@
-package io.git.Hashibutogarasu.mixin;
+package io.git.Hashibutogarasu.worldpreset.mixin;
 
-import io.git.Hashibutogarasu.config.ModConfig;
-import io.git.Hashibutogarasu.gui.widgets.ModConfigButtons;
+import io.git.Hashibutogarasu.worldpreset.config.ModConfig;
+import io.git.Hashibutogarasu.worldpreset.gui.widgets.ModConfigButtons;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

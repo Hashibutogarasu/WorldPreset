@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "git.hashibutogarasu.worldpreset.mixin",
+  "package": "io.git.Hashibutogarasu.worldpreset.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],

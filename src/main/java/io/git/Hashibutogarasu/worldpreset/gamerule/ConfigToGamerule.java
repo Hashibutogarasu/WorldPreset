@@ -1,4 +1,4 @@
-package io.git.Hashibutogarasu.gamerule;
+package io.git.Hashibutogarasu.worldpreset.gamerule;
 
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtElement;
